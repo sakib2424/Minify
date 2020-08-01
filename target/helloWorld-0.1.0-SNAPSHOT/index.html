@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>Hello App Engine</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<h1>hello</h1>
+
+	<table>
+		<tr>
+			<td colspan="2" style="font-weight: bold;">Available Servlets:</td>
+		</tr>
+		<tr>
+			<td><a href='/hello'>The servlet</a></td>
+		</tr>
+	</table>
+
+	<button onclick="log_function()">Log something to the console</button>
+	<button onclick="log_function2()">Log something to the console</button>
+
+	<form id="#myForm">
+		<input type="text" placeholder="Enter first number here"
+			name="firstNumber" id="firstNumber"><input> <input
+			type="text" placeholder="Enter second number here"
+			name="secondNumber" id="secondNumber"><input> <input
+			type="button" onClick="addTwoNumbers()">
+	</form>
+
+
+
+	<h1>Output Goes Here</h1>
+
+	<br />
+
+	<input type="button" onClick="outsideLibraryCall()">Library
+	Call
+	</input>
+
+	<script type="text/javascript" src="js/sample.js"></script>
+
+	<script>
+	require("google-closure-library");
+	</script>
+
+</body>
+</html>
